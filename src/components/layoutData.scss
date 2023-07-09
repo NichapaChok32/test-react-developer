@@ -1,0 +1,109 @@
+.layoutData {
+  margin: auto;
+  .btn-row {
+    margin: 0 auto !important;
+    text-align: center;
+    .btnShape {
+      width: 100%;
+      height: 100%;
+      padding: 12px 50px;
+      border-radius: 8px;
+      text-align: center;
+      border: none;
+      &:hover {
+        background-color: #ffa200;
+        border: none;
+      }
+      &:active {
+        background-color: #6eda78;
+        border: none;
+      }
+      .shape {
+        width: 0;
+        height: 0;
+        border-style: solid;
+      }
+      .leftShape {
+        border-width: 100px 200px 100px 0;
+        border-color: transparent #79797a transparent transparent;
+      }
+      .upShape {
+        border-width: 0 100px 200px 100px;
+        border-color: transparent transparent #79797a transparent;
+      }
+      .downShape {
+        border-width: 200px 100px 0 100px;
+        border-color: #79797a transparent transparent transparent;
+      }
+      .rightShape {
+        border-style: solid;
+        border-width: 100px 0 100px 200px;
+        border-color: transparent transparent transparent #79797a;
+      }
+      .decsBtn {
+        height: 22px;
+        margin-bottom: -24px;
+        background-color: #6eda78;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+      }
+    }
+  }
+  .divider {
+    border-color: #fff;
+  }
+  .cardShape {
+    width: 100%;
+    height: 100%;
+    padding: 12px 50px;
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+    &.cardOval {
+      padding: 50px;
+    }
+    .square {
+      width: 200px;
+      height: 200px;
+      background-color: #79797a;
+      margin: 0 auto;
+    }
+    .circle {
+      width: 200px;
+      height: 200px;
+      background-color: #79797a;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+    .oval {
+      width: 200px;
+      height: 100px;
+      margin: auto;
+      background-color: #79797a;
+      border-radius: 50%;
+    }
+    .trapezoid {
+      width: 200px;
+      height: 0;
+      margin: auto;
+      border-bottom: 100px solid #79797a;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+    }
+    .rectangle {
+      width: 200px;
+      height: 100px;
+      margin: auto;
+      background-color: #79797a;
+    }
+    .parallelogram {
+      width: 200px;
+      height: 100px;
+      margin: auto;
+      transform: skew(20deg);
+      background: #79797a;
+    }
+  }
+}

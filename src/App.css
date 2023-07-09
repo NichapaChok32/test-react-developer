@@ -24,8 +24,38 @@
   color: white;
 }
 
+.App-row {
+  background-color: #282c34;
+  padding: 12px;
+}
+
+.App-lang {
+  margin-left: auto;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.btnMain {
+  width: fit-content;
+  margin-left: auto;
+  border-radius: 8px;
+  border: none;
+}
+.btnMain:hover {
+  background-color: #ffa200;
+  border: none;
+}
+.btnMain:active {
+  background-color: #6eda78;
+  border: none;
+}
+
+.mainSpan {
+  font-size: 16px;
+  line-height: 22px;
+  color: #282c34;
 }
 
 @keyframes App-logo-spin {

@@ -36,26 +36,26 @@ function App() {
 
   return (
     <div className="App">
-      <Row className="App-row">
-        <Select
-          placeholder={i18n.language.toUpperCase()}
-          allowClear
-          options={[
-            { value: "th", label: "TH" },
-            { value: "en", label: "EN" },
-          ]}
-          className="App-lang"
-          onChange={handleChangeLang}
-        ></Select>
-      </Row>
-      <Row className="App-row">
-        <Button href="/" className="btnMain">
-          <span className="mainSpan">{t("mainpage")}</span>
-        </Button>
-      </Row>
       <header className="App-header">
+        <Row className="App-row">
+          <Select
+            placeholder={i18n.language.toUpperCase()}
+            allowClear
+            options={[
+              { value: "th", label: "TH" },
+              { value: "en", label: "EN" },
+            ]}
+            className="App-lang"
+            onChange={handleChangeLang}
+          ></Select>
+        </Row>
+        <Row className="App-row">
+          <Button href="/" className="btnMain">
+            <span className="mainSpan">{t("mainpage")}</span>
+          </Button>
+        </Row>
         <BrowserRouter>
-          <div>
+          <div className="App-route">
             <Routes>
               <Route path="/" element={<Layout />} />
               <Route path="layoutdata" element={<LayoutData />} />

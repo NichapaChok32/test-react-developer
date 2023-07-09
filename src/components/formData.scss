@@ -1,0 +1,36 @@
+.formData {
+  max-width: 50%;
+  margin: auto;
+  .formItem {
+    margin-bottom: 16px;
+    .selectNationality {
+      width: 200px;
+    }
+    .selectCode {
+      width: 250px;
+    }
+    .inputName {
+      width: 350px;
+    }
+    .salaryInput {
+      width: 200px;
+    }
+    &.formItemLast {
+      width: 100%;
+      .ant-col {
+        flex-grow: unset;
+      }
+    }
+    &.formItemAction {
+      width: 100%;
+      .ant-col {
+        width: fit-content !important;
+        flex-grow: unset;
+        margin-left: auto;
+      }
+      .btnSubmit {
+        margin-right: 16px;
+      }
+    }
+  }
+}

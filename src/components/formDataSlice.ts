@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
+import { getI18n } from "react-i18next";
 
 interface FormDataState {
     title: string,
@@ -16,15 +17,15 @@ interface FormDataState {
 
 const initialState: FormDataState = {
     title: '',
-        firstName: '',
-        lastName: '',
-        birthDate: '',
-        nationality: '',
-        idCard: '',
-        gender: '',
-        phoneNumber: '',
-        passportId: '',
-        salary: 0
+    firstName: '',
+    lastName: '',
+    birthDate: '',
+    nationality: '',
+    idCard: '',
+    gender: '',
+    phoneNumber: '',
+    passportId: '',
+    salary: 0
 }
 
 export const formDataSlice = createSlice({
@@ -43,8 +44,21 @@ export const formDataSlice = createSlice({
             state.passportId = action.payload.passportId
             state.salary = action.payload.salary
 
+            const result = {
+                th: {},
+                en: {}
+            }
+
+            const i18n = getI18n();
+
+            if (i18n.language === 'th') {
+                result.th = state;
+            } else {
+                result.en = state;
+            }
+
             const lists = []
-            lists.push(state);
+            lists.push(result);
 
             localStorage.setItem('listsData', JSON.stringify(lists))
         },

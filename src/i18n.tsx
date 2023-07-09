@@ -8,7 +8,7 @@ const resources = {
       firstname: "Firstname",
       lastname: "Lastname",
       birthday: "Birthday",
-      nationality: "nationality",
+      nationality: "Nationality",
       idcard: "ID Card",
       gender: "Gender",
       phonenumber: "Mobile Number",
@@ -32,6 +32,7 @@ const resources = {
       form: "Form & Table",
       shapeBtn: "Move shape",
       positionBtn: "Move position",
+      countryCode: "Country Code",
     },
   },
   th: {
@@ -64,6 +65,7 @@ const resources = {
       form: "การจัดการหน้าฟอร์ม",
       shapeBtn: "เลือกรูปแบบ",
       positionBtn: "เปลี่ยนตำแหน่ง",
+      countryCode: "รหัสประเทศ",
     },
   },
 };
